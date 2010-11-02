@@ -1,0 +1,40 @@
+= jquery-placeholder-plugin
+
+Placeholder plugin for jquery using HTML5 data attributes
+
+== Following versions of jQuery are supported:
+
+* 1.4
+* 1.4.1
+* 1.4.2
+* 1.4.3
+
+== Installation
+
+Download jQuery from http://docs.jquery.com/Downloading_jQuery. Then download src/jquery-placeholder.js
+
+== Usage
+
+1. Have a text field like below:
+
+<input type="text" name="q" id="q" data-placeholder="Product or Service" class="field search">
+
+2. Call the 'placeholder' method on a class you define. In the above example we will use the class 'search'
+
+$('.search').placeholder();
+
+This will add the text in the data attribute 'data-placeholder' as the value or the form field. When the placeholder text is active, the field will also gain a class called placeholder-input which can be used to style the text.
+
+== Options
+
+=== attribute
+
+Allows you to change the HTML5 data attribute name.
+
+$('.search').placeholder({attribute:'default'});
+
+This will change the plugin to look for the default text in the data attribute called 'data-default'
+
+== Todo
+
+* Allow changes to the active placeholder class that gets inserted.
