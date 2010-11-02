@@ -17,7 +17,7 @@ Download jQuery from http://docs.jquery.com/Downloading_jQuery. Then download sr
 
 1. Have a text field like below:
 
-  <input type="text" name="q" id="q" data-placeholder="Product or Service" class="field search">
+  <input type="text" name="q" data-placeholder="Product or Service" class="search">
 
 2. Call the 'placeholder' method on a class you define. In the above example we will use the class 'search'
 
