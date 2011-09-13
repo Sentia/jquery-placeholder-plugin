@@ -4,10 +4,13 @@ Placeholder plugin for jquery using HTML5 data attributes
 
 == Following versions of jQuery are supported:
 
+* 1.6.2
 * 1.4
 * 1.4.1
 * 1.4.2
 * 1.4.3
+
+Other version have not been tested but it is assumed to worked from 1.4.3 onwards
 
 == Installation
 
@@ -34,6 +37,16 @@ Allows you to change the HTML5 data attribute name.
   $('.search').placeholder({attribute:'default'});
 
 This will change the plugin to look for the default text in the data attribute called 'data-default'
+
+=== color
+
+Allows you to change the color of the placeholder.
+
+  $('.search').placeholder( { color:'#b9b9b9' });
+
+This will change the colour of the placeholder text. When focused, the input color will revert to what was originally defined
+
+Note: If you styled the colour of the entered text inline with the HTML, this will get cleared. But you really shouldn't be styling there anyway.
 
 == Todo
 
