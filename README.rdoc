@@ -4,13 +4,13 @@ Placeholder plugin for jquery using HTML5 data attributes
 
 == Following versions of jQuery are supported:
 
-* 1.6.2
 * 1.4
 * 1.4.1
 * 1.4.2
 * 1.4.3
+* 1.6.2
 
-Other version have not been tested but it is assumed to worked from 1.4.3 onwards
+Other version have not been tested but it is assumed to worked from 1.4.0 onwards
 
 == Installation
 
