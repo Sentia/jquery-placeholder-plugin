@@ -4,12 +4,13 @@
 
     var settings = $.extend({
       attribute: 'placeholder',
-      color: null
+      color: null,
+      submitPlaceholder: false
     },options||{});
 
     var placeholder_text = $(this).attr('data-' + settings.attribute);
     // Setup the placeholder
-    if ($(this).val() === ''){
+    if ($(this).val() === '' || $(this).val() === placeholder_text){
       $(this).val(placeholder_text);
       $(this).addClass('placeholder-input');
       if(settings.color != null){ $(this).css('color', settings.color); }
@@ -30,5 +31,10 @@
         if(settings.color != null){ $(this).css('color', settings.color); }
       }
     });
+
+    if(submitPlaceholder){
+
+    }
+
   }
 })(jQuery);
